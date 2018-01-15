@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/likethemammal/general-components#readme",
   "files": [
+    "/",
     "bin"
   ],
   "keywords": [
