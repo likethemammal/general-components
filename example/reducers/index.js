@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import * as example from "../reducers/example";
+import * as example from "./example";
 
 const createReducer = function(initialState, actions) {
 
