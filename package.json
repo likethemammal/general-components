@@ -12,6 +12,9 @@
     "url": "https://github.com/likethemammal/general-components/issues"
   },
   "homepage": "https://github.com/likethemammal/general-components#readme",
+  "files": [
+    "bin"
+  ],
   "keywords": [
     "react"
   ],
