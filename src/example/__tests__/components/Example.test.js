@@ -1,8 +1,8 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import shared from '../../../bin/__tests__/_shared/tests'
-import Example from '../../../example/components/Example.unit'
+import shared from '../../../__tests__/_shared/tests'
+import Example from '../../components/Example.unit'
 
 
 const changeAction = jest.fn()

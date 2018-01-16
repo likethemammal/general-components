@@ -3,12 +3,14 @@ const pixrem = require('pixrem')
 
 const path = require('path')
 
-// const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const plugins = [
-    // new CopyWebpackPlugin([
-    //     { from: './index.html', to: '../example/index.html'},
-    // ])
+    new CopyWebpackPlugin([
+        { from: 'example/index.html', to: 'example/index.html'},
+        { from: 'general.css',},
+        { from: 'global.css',},
+    ])
 ]
 
 const css_loader = {
@@ -36,16 +38,17 @@ const postcss_loader = {
 
 const config = {
 
-    context: path.resolve(__dirname, './example'),
+    context: path.resolve(__dirname, './src'),
 
     watch: true,
     entry: {
-        bundle: './index.js',
+        'example/bundle': './example/index.js',
+        'bundle': './index.js',
     },
 
     output: {
         filename: '[name].js',
-        path:  path.resolve(__dirname, './example'),
+        path:  path.resolve(__dirname, './bin'),
     },
 
     module: {

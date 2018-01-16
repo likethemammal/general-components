@@ -12,8 +12,8 @@
     "url": "https://github.com/likethemammal/general-components/issues"
   },
   "homepage": "https://github.com/likethemammal/general-components#readme",
+  "main": "./bin/bundle.js",
   "files": [
-    "/",
     "bin"
   ],
   "keywords": [
@@ -70,12 +70,12 @@
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>test.config.js",
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>bin/__mocks__/file_mock.js",
-      "\\.(css|less)$": "<rootDir>bin/__mocks__/css_mock.js"
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>src/__mocks__/file_mock.js",
+      "\\.(css|less)$": "<rootDir>src/__mocks__/css_mock.js"
     },
     "testPathIgnorePatterns": [
       "/node_modules/",
-      "bin/__tests__/_shared/*"
+      "src/__tests__/_shared/*"
     ]
   },
   "engines": {

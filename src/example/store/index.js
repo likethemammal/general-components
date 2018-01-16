@@ -1,5 +1,5 @@
 import { appReducer } from '../reducers'
-import configureStore from "../../bin/store/configure"
+import configureStore from "../../store/configure"
 
 //used in devtools
 const STORE_NAME_App = 'App'
