@@ -1,7 +1,7 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import shared from '../_shared/tests'
+import * as shared from '../_shared/tests'
 import Tint from '../../components/Tint'
 
 

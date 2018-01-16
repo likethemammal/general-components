@@ -1,7 +1,7 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import shared from '../../../__tests__/_shared/tests'
+import * as shared from '../../../__tests__/_shared/tests'
 import Example from '../../components/Example.unit'
 
 

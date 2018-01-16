@@ -2,8 +2,8 @@ import DotDotDot from './components/DotDotDot'
 import SVG from './components/SVG'
 import Tint from './components/Tint'
 
-import tests from './__tests__/_shared/tests'
-import validations from './__tests__/_shared/validations'
+import * as tests from './__tests__/_shared/tests'
+import * as validations from './__tests__/_shared/validations'
 
 import configure from './store/configure'
 

@@ -10,6 +10,7 @@ const plugins = [
         { from: 'example/index.html', to: 'example/index.html'},
         { from: 'general.css',},
         { from: 'global.css',},
+        { from: 'utils.js',},
     ])
 ]
 
@@ -39,12 +40,7 @@ const postcss_loader = {
 const config = {
 
     context: path.resolve(__dirname, './src'),
-
     watch: true,
-    entry: {
-        'example/bundle': './example/index.js',
-        'bundle': './index.js',
-    },
 
     output: {
         filename: '[name].js',
