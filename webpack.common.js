@@ -40,7 +40,6 @@ const postcss_loader = {
 const config = {
 
     context: path.resolve(__dirname, './src'),
-    watch: true,
 
     output: {
         filename: '[name].js',

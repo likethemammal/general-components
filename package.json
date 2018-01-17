@@ -20,6 +20,7 @@
     "react"
   ],
   "scripts": {
+    "prepublish": "npm run build",
     "test": "jest -u",
     "cover": "jest --coverage -u",
     "dev": "webpack-dev-server --config webpack.dev.js",
