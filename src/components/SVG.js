@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 
 import css from './SVG.css'
 
-const SVG_PREFIX = 'data:image/svg+xml;utf8,'
-
 export default class SVG extends Component {
 
     static defaultProps = {
@@ -12,10 +10,10 @@ export default class SVG extends Component {
 
     render() {
 
-        const { raw, className } = this.props
+        const { raw, ...rest } = this.props
 
         return <div
-            className={className}
+            {...rest}
             dangerouslySetInnerHTML={{__html: raw}}
         />
     }
