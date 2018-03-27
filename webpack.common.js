@@ -8,9 +8,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const plugins = [
     new CopyWebpackPlugin([
         { from: 'example/index.html', to: 'example/index.html'},
-        { from: 'general.css',},
-        { from: 'global.css',},
+        { from: 'components/*.css' },
+        { from: '*.css' },
         { from: 'utils.js',},
+
     ])
 ]
 
@@ -19,7 +20,6 @@ const css_loader = {
     options: {
         modules: true,
         localIdentName: '[name].[local]',
-        importLoaders: 1,
     },
 }
 
