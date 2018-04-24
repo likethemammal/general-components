@@ -1,5 +1,3 @@
-import toJSON from 'enzyme-to-json'
-
 import SVG from '../../components/SVG'
 
 export const SHOULD_HAVE_CHILDREN = function(component, componentName) {
@@ -13,7 +11,7 @@ export const SHOULD_HAVE_CHILDREN = function(component, componentName) {
 export const SNAPSHOTS_SHOULD_MATCH = function(components) {
     components.map(function (component, i) {
         test(`Snapshot ${i} should match`, () => {
-            expect(toJSON(component)).toMatchSnapshot()
+            expect(component).toMatchSnapshot()
         })
     })
 }
