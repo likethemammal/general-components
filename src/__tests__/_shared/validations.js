@@ -14,6 +14,14 @@ export const NO_LENGTH = function(func, error) {
     })
 }
 
+export const NEGATIVE_NUMBER = function(func, error) {
+    test('if number is less than zero, error', () => {
+        expect(() => {
+            func(-1)
+        }).toThrow(error)
+    })
+}
+
 export const NO_LENGTH_IS_ARRAY = function(func, error) {
     test('if is array, but has no length, error', () => {
         expect(() => {
@@ -34,6 +42,14 @@ export const NOT_ARRAY = function(func, error) {
     test('if value not array, error', () => {
         expect(() => {
             func({})
+        }).toThrow(error)
+    })
+}
+
+export const NOT_NUMBER = function(func, error) {
+    test('if value not number, error', () => {
+        expect(() => {
+            func('')
         }).toThrow(error)
     })
 }
