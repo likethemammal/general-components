@@ -10,7 +10,7 @@ module.exports = merge(common, {
     watch: true,
 
     entry: {
-        'example/bundle': './example/index.js',
+        'example_bundle': './example/index.js',
     },
 
     module: {

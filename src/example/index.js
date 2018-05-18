@@ -1,10 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import bundle from '../../bin/bundle'
-
-console.log(bundle)
-
 import Root from './components/Root'
 import global_css from '../global.css'
 

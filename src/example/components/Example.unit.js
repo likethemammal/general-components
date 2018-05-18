@@ -21,6 +21,7 @@ export default class Example extends Component {
             className={className}
             onClick={this.onButtonClick}
         >
+            {'This is a test of the Webpack bundle, PostCSS, and Babel.'}
         </div>
     }
 }

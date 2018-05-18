@@ -3,5 +3,7 @@
 exports[`Example Snapshot 0 should match 1`] = `
 <div
   onClick={[Function]}
-/>
+>
+  This is a test of the Webpack bundle, PostCSS, and Babel.
+</div>
 `;
