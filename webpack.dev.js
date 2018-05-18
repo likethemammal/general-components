@@ -17,7 +17,6 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.js$/,
-                use: ["source-map-loader"],
                 enforce: "pre"
             }
         ],
