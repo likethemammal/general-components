@@ -27,7 +27,7 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.11",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
